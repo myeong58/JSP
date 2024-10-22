@@ -17,7 +17,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Session</title>
 </head>
 <body>
 	<h2>Session 설정 확인</h2>
