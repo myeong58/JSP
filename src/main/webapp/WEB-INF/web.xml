@@ -26,9 +26,96 @@
     <param-name>OraclePwd</param-name>
     <param-value>1234</param-value>
   </context-param>
-  
+  <context-param>
+    <param-name>POST_PER_PAGE</param-name>
+    <param-value>10</param-value>
+  </context-param>
+  <context-param>
+    <param-name>PAGES_PER_BLOCK</param-name>
+    <param-value>5</param-value>
+  </context-param>
   <session-config>
   	<session-timeout>20</session-timeout>
   </session-config>
   
-</web-app>
+   <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/12Servlet/HelloServlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AnnoMapping</display-name>
+    <servlet-name>AnnoMapping</servlet-name>
+    <servlet-class>servlet.AnnoMapping</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AnnoMapping</servlet-name>
+    <url-pattern>/AnnoMapping</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DirectSetvletPrint</display-name>
+    <servlet-name>DirectSetvletPrint</servlet-name>
+    <servlet-class>servlet.DirectSetvletPrint</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DirectSetvletPrint</servlet-name>
+    <url-pattern>/DirectSetvletPrint</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FrontController</display-name>
+    <servlet-name>FrontController</servlet-name>
+    <servlet-class>servlet.FrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FrontController</servlet-name>
+    <url-pattern>/FrontController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MemberAuth</servlet-name>
+    <servlet-class>servlet.MemberAuth</servlet-class>
+    <init-param>
+      <param-name>admin_id</param-name>
+      <param-value>nakja</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MemberAuth</servlet-name>
+    <url-pattern>/12Servlet/MemberAuth.mvc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UploadProcess</display-name>
+    <servlet-name>UploadProcess</servlet-name>
+    <servlet-class>fileupload.UploadProcess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadProcess</servlet-name>
+    <url-pattern>/UploadProcess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MVCBoardList</servlet-name>
+  	<servlet-class>model2.mvcboard.ListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MVCBoardList</servlet-name>
+  	<url-pattern>/mvcboard/list.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MVCBoardList</servlet-name>
+    <servlet-class>model2.mvcboard.ListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MVCBoardList</servlet-name>
+    <url-pattern>/mvcboard/list.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  </web-app>

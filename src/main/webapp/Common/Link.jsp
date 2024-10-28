@@ -14,7 +14,7 @@
 			<!-- <a href="../06Session/List.jsp">게시판(페이징x)</a> -->
 			<a href="../08Board/List.jsp">게시판(페이징x)</a>
 			&nbsp;&nbsp;&nbsp;
-			<a href="../09PagingBoard/List.jsp">게시판(페이징o)</a>
+			<a href="../09PaginBoard/List.jsp">게시판(페이징o)</a>
 		</td>
 	</tr>
 </table>
