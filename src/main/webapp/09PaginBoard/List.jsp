@@ -105,7 +105,7 @@
 	<table border="1" width="90%">
 		<tr align="center">
 			<td>
-				<%= BoardPage.pageingStr(totalCount, pageSize, blockPage, pageNum, request.getRequestURI()) %>
+				<%= BoardPage.pagingStr(totalCount, pageSize, blockPage, pageNum, request.getRequestURI()) %>
 			</td>
 		
 			<td><button type="button" onclick="location.href='Write.jsp';">글쓰기</button></td>
